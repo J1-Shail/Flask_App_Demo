@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h1> Your Details: </h1>
+<div class='content-section'>
+      <br>
+      <p>
+        Name: {{ name }}  
+      <br>
+        Date of Birth: {{ dob }}</h2>  
+      <br>
+        Email: {{ email }}</h2>  
+      <br>
+        City: {{ city }}
+      </p>
+      <br>
+      <a class="btn btn-info mb-4" href="{{ url_for('home') }}">Back to Form</a>
+</div>
+{% endblock content %}
